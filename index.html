@@ -3,12 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название вашего проекта</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="NewsHub — актуальные новости политики, медицины и науки.">
+    <title>NewsHub — Главные новости</title>
 </head>
-<body>
-    <h1>Добро пожаловать в NewsHub!</h1>
-    <p>Это стартовая страница моего веб-приложения.</p>
+<body itemscope itemtype="https://schema.org/WebPage">
+
+    <a href="#main" class="skip-link">Перейти к основному содержимому</a>
+
+    <header class="header" itemprop="header" itemscope itemtype="https://schema.org/WPHeader">
+        <div class="header__container">
+            <div class="header__logo" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <meta itemprop="name" content="NewsHub">
+                <a href="/" aria-label="На главную NewsHub">
+                    <img src="images/logo.jpg" alt="Логотип NewsHub" itemprop="logo">
+                </a>
+            </div>
+            
+            <nav class="header__nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li><a href="#">Главное</a></li>
+                    <li><a href="#">Политика</a></li>
+                    <li><a href="#">Медицина</a></li>
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Мнения</a></li>
+                    <li><a href="#">Олимпиада 2026</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__info">
+                <time datetime="2026-02-10T20:26">Вт, 10 20:26</time>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="main-content" itemprop="mainContentOfPage">
+    <h1 class="visually-hidden">Главные новости информационного портала NewsHub</h1>
+
+    <section class="news-section" aria-labelledby="section-main-title">
+        <h2 id="section-main-title" class="section-category">Главное</h2>
+        
+        <article class="hero-article" itemprop="mainEntity" itemscope itemtype="https://schema.org/NewsArticle">
+            <header class="hero-article__header">
+                <h3 itemprop="headline">Законотворцы США обвиняют департамент справедливости в «абсурдной» цензуре файлов по делу Эпштейна</h3>
+                
+                <div class="article-meta">
+                    <time datetime="2026-02-10T16:26:00+03:00" itemprop="datePublished">4 ч. назад</time>
+                    <span>| Читайте в разделе «Политика»</span>
+                    
+                    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization" class="visually-hidden">
+                        <meta itemprop="name" content="NewsHub">
+                    </div>
+
+                    <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="article-author">
+                        Автор: <span itemprop="name">Редакция NewsHub</span>
+                        <link itemprop="url" href="https://newshub.example.com/authors/editorial">
+                    </div>
+                </div>
+            </header>
+
+            <div class="hero-article__layout">
+                <div itemprop="articleBody" class="hero-article__description">
+                    <p itemprop="description">Республиканец Томас Масси и демократ Ро Кхана говорят, что своими действиями департамент позволяет усомниться в силе законов США.</p>
+                </div>
+
+                <figure class="hero-article__figure">
+                    <img src="images/man.jpg" alt="Чиновники в синих костюмах ведут обсуждение на фоне современного здания" itemprop="image">
+                    <figcaption class="visually-hidden">Обсуждение цензуры в политических кругах</figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <div class="news-grid">
+            <article class="news-card" itemscope itemtype="https://schema.org/NewsArticle">
+                <figure>
+                    <img src="images/trump.jpg" alt="Дональд Трамп целует американский флаг" itemprop="image">
+                </figure>
+                <h3 itemprop="headline"><a href="#">Пошлины против Китая набирают новые обороты</a></h3>
+                <div itemprop="articleBody">
+                    <p>«Китаю стоит задуматься», — говорит Министр финансов США Скотт Бессент.</p>
+                </div>
+                <time datetime="2026-02-10T12:00:00+03:00" itemprop="datePublished">8 ч. назад | «Политика»</time>
+                <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="visually-hidden">
+                    <span itemprop="name">Политический обозреватель</span>
+                    <link itemprop="url" href="https://newshub.example.com/authors/politics-observer">
+                </div>
+            </article>
+
+            <article class="news-card" itemscope itemtype="https://schema.org/NewsArticle">
+                <figure>
+                    <img src="images/flag.jpg" alt="Музыкант выступает на сцене с флагом Пуэрто-Рико" itemprop="image">
+                </figure>
+                <h3 itemprop="headline"><a href="#">Выступление как нечто личное</a></h3>
+                <div itemprop="articleBody">
+                    <p>Мнения людей касательно выступления латиноамериканского певца Bad Bunny разделились.</p>
+                </div>
+                <time datetime="2026-02-10T12:00:00+03:00" itemprop="datePublished">8 ч. назад | «Мнения»</time>
+                <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="visually-hidden">
+                    <span itemprop="name">Редакция</span>
+                    <link itemprop="url" href="https://newshub.example.com/authors/editorial">
+                </div>
+            </article>
+
+            <article class="news-card" itemscope itemtype="https://schema.org/NewsArticle">
+                <figure>
+                    <img src="images/olympics.jpg" alt="Светящиеся олимпийские кольца на стадионе" itemprop="image">
+                </figure>
+                <h3 itemprop="headline"><a href="#">Беларусы будут участвовать в Олимпиаде 2026</a></h3>
+                <div itemprop="articleBody">
+                    <p>Несмотря на разногласия, уроженцы Республики Беларусь примут участие в зимних играх в Италии.</p>
+                </div>
+                <time datetime="2026-02-10T12:00:00+03:00" itemprop="datePublished">8 ч. назад | «Спорт»</time>
+                <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="visually-hidden">
+                    <span itemprop="name">Спортивный отдел</span>
+                    <link itemprop="url" href="https://newshub.example.com/authors/sports-dept">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <aside class="sidebar" aria-label="Дополнительные сводки">
+        <article class="sidebar-item" itemscope itemtype="https://schema.org/NewsArticle">
+            <figure>
+                <img src="images/oon.jpg" alt="Здание штаб-квартиры ООН и ряд флагов" itemprop="image">
+            </figure>
+            <h3 itemprop="headline">ООН взволнована происходящим на Востоке</h3>
+            <div itemprop="articleBody">
+                <p>Эксперты продолжают искать оптимальные пути деэскалации со стороны США.</p>
+            </div>
+            <time datetime="2026-02-10T12:00:00+03:00" itemprop="datePublished">8 ч. назад | «Политика»</time>
+            <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="visually-hidden">
+                <span itemprop="name">Международный отдел</span>
+                <link itemprop="url" href="https://newshub.example.com/authors/world-dept">
+            </div>
+        </article>
+
+        <article class="sidebar-item" itemscope itemtype="https://schema.org/NewsArticle">
+    <figure class="sidebar-item__figure">
+        <img src="images/medicine.jpg" alt="Медицинские исследователи в лаборатории работают с микроскопом" itemprop="image">
+    </figure>
+
+    <h3 itemprop="headline">Разработка продолжается</h3>
+    
+    <div itemprop="articleBody">
+        <p itemprop="description">Индийские медики работают над вакциной от нового штамма тяжелой болезни.</p>
+    </div>
+
+    <time datetime="2026-02-10T12:00:00+03:00" itemprop="datePublished">8 ч. назад | «Наука» и «Медицина»</time>
+
+    <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="visually-hidden">
+        <span itemprop="name">Медицинский обозреватель</span>
+        <link itemprop="url" href="https://newshub.example.com/authors/medical-observer">
+    </div>
+</article>
+
+    </aside>
+</main>
+    <footer class="footer" itemprop="footer" itemscope itemtype="https://schema.org/WPFooter">
+        <section class="footer__newsletter" aria-label="Подписка на рассылку">
+            <p>Не упускайте ничего. Наша новостная рассылка уже доступна. Подробности <a href="#" aria-label="Перейти к деталям рассылки">здесь</a></p>
+        </section>
+        
+        <div class="footer__main">
+            <div class="footer__brand">
+                <img src="images/logo.jpg" alt="Полный логотип NewsHub" class="footer__logo">
+            </div>
+            
+            <nav class="footer__social" aria-label="Социальные сети">
+                <a href="#" aria-label="Наш Вконтакте"><img src="images/vk.jpg" alt="Вконтакте"></a>
+                <a href="#" aria-label="Наш Facebook"><img src="images/facebook.jpg" alt="Фейсбук"></a>
+            </nav>
+            
+            <p class="footer__copyright">All Rights Reserved, <span itemprop="copyrightYear">2026</span></p>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
