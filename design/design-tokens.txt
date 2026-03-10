@@ -1,0 +1,20 @@
+-- DESIGN TOKENS --
+
+-- COLORS (Selection Colors) --
+Black-100:       #000000 (100%)
+Dark-Blue-75:    #020D50 (75%)
+Light-Gray:      #E3E3E3 (100%)
+Black-8:         #000000 (8%)
+Graphite:        #262626 (100%)
+Sky-Blue-70:     #C7DAF7 (70%)
+Black-4:         #000000 (4%)
+Dark-Gray:       #333333 (100%)
+Dark-Red-90:     #8F1818 (90%)
+Red-Muted:       #BF1D1D (50%)
+Blue-Gray-Soft:  #DFE5EE (100%)
+Bright-Red:      #F20606 (100%)
+
+-- TYPOGRAPHY --
+Header-Main:     Kumbh Sans, ExtraBold, 42px
+Narrow-Large:    PT Sans Narrow, Regular, 42px
+Narrow-Medium:   PT Sans Narrow, Regular, 28px
