@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #020D50;      
+    --color-graphite: #262626;
+    --color-dark-gray: #333333;
+    --color-light-gray: #E3E3E3;
+    --color-blue-gray-soft: #DFE5EE;
+    --color-dark-red: #8F1818;     
+    --color-white: #FFFFFF;
+
+    --font-header: 'Kumbh Sans', sans-serif;
+    --font-main: 'PT Sans Narrow', sans-serif;
+
+    --container-width: 1100px; 
+}
