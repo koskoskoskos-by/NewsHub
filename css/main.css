@@ -108,3 +108,52 @@
         font-size: 28px;
     }
 }
+/* Прячем ссылку, она нужна только для скринридеров при нажатии Tab */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* Раскладка страницы: левая и правая колонка */
+.content-layout {
+    display: flex;
+    gap: 30px; /* Расстояние между новостями и боковой панелью */
+    align-items: flex-start;
+}
+
+/* Основной блок с новостями берет всё свободное место */
+.news-section {
+    flex: 1;
+}
+
+/* Боковая панель имеет фиксированную ширину */
+.sidebar {
+    width: 300px;
+    flex-shrink: 0; /* Не дает боковой панели сжиматься */
+}
+
+/* Если экран телефона, ставим боковую панель ВНИЗ под новости */
+@media (max-width: 900px) {
+    .content-layout {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* Красивый заголовок для сайдбара */
+.sidebar-title {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8B0000;
+    margin-bottom: 20px;
+}
